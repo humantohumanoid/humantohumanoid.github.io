@@ -202,10 +202,10 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present <span style="color: Red;">H</span>uman <span style="color: Red;">to</span> Human<span style="color: Red;">o</span>id (<strong>H2O</strong>), a scalable reinforcement learning (RL) based framework that enables real-time whole-body teleoperation of a full-size humanoid robot with only an RGB camera setup. 
-            To bridge the gap between human movements and humanoid robot capabilities, we first propose a "sim-to-data" process to filter and correct unfeasible motions through trials of imitation by a privileged controller.
-            Afterwards, we train a robust real-time tracking controller in simulation using these refined motions as well as a simplified and practical observation space, and transfer it to the real humanoid robot in a zero-shot manner.
-            We successfully achieve teleoperation of dynamic whole-body motions in real-world scenarios, including walking, kicking, turning, waving, pushing, boxing, etc. 
+            We present <span style="color: Red;">H</span>uman <span style="color: Red;">to</span> Human<span style="color: Red;">o</span>id (<strong>H2O</strong>), a reinforcement learning (RL) based framework that enables real-time whole-body teleoperation of a full-sized humanoid robot with only an RGB camera. 
+            To create a large-scale retargeted motion dataset of human movements for humanoid robots, we propose a scalable ``sim-to-data" process to filter and pick feasible motions using a privileged motion imitator.
+            Afterwards, we train a robust real-time humanoid motion imitator in simulation using these refined motions and transfer it to the real humanoid robot in a zero-shot manner. 
+            We successfully achieve teleoperation of dynamic whole-body motions in real-world scenarios, including walking, back jumping, kicking, turning, waving, pushing, boxing, etc. 
             To the best of our knowledge, this is the first demonstration to achieve learning-based real-time whole-body humanoid teleoperation.
           </p>
         </div>
